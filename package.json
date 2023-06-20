@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-agencia-viajes-node",
+  "version": "1.0.0",
+  "description": "Proyecto con node, y express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yechua-silva/Proyecto-Agencia-viajes-node.git"
+  },
+  "author": "yechua-silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yechua-silva/Proyecto-Agencia-viajes-node/issues"
+  },
+  "homepage": "https://github.com/yechua-silva/Proyecto-Agencia-viajes-node#readme"
+}
