@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yechua-silva/Proyecto-Agencia-viajes-node.git"
+    "url": "git+https://github.com/yechua-silva/Agencia-viajes-node.git"
   },
   "type": "module",
   "author": "yechua-silva",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yechua-silva/Proyecto-Agencia-viajes-node/issues"
+    "url": "https://github.com/yechua-silva/Agencia-viajes-node/issues"
   },
-  "homepage": "https://github.com/yechua-silva/Proyecto-Agencia-viajes-node#readme",
+  "homepage": "https://github.com/yechua-silva/Agencia-viajes-node#readme",
   "dependencies": {
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
