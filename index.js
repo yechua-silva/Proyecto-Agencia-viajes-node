@@ -2,9 +2,15 @@
 // const express = require('express');
 import  express  from "express";
 import router from './routes/index.js'
+import db from "./config/db.js";
 
 // Funcion para ejecutar express, asignada a app
 const app = express();
+
+// Conectar la base de datos
+db.authenticate()
+    .then(() => console.log('Conexion exitosa'))
+    .catch( error => console.log(error) )
 
 // Definir puerto
 // process.env - son lo que se conocen como variables de entorno, cuando se haga el deployment se ejecutara , en este caso se ejecutara en el 4000
