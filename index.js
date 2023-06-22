@@ -4,6 +4,7 @@ import  express  from "express";
 import router from './routes/index.js'
 import db from "./config/db.js";
 
+
 // Funcion para ejecutar express, asignada a app
 const app = express();
 
@@ -26,6 +27,9 @@ app.use( ( req, res, next ) => {
     res.locals.nombreSitio = 'Agencia de Viajes'
     next();
 })
+
+// Agregar body parser para leer los datos del formulario
+app.use( express.urlencoded( {extended: true} ) )
 
 // Definir la carpeta publica
 app.use( express.static('public'))
