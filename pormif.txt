@@ -1,0 +1,14 @@
+user
+root
+
+password
+arRiB0Wt02Cdrrq16O3d
+
+
+containers-us-west-83.railway.app
+
+PORT
+6251
+
+DB
+railway
