@@ -1,5 +1,5 @@
 <h1>Agencia de Viajes  ✈️🏙️</h1>
-
+![Reservando hora y mesa](public/img/superior.jpg "Resevando hora y mesa")
 
 ## Descripción 🐶📅
   El proyecto es una aplicación web desarrollada utilizando Node.js como entorno de ejecución del lado del servidor. Se utiliza el framework Express.js para construir la estructura y las rutas del servidor. La interfaz de usuario se crea utilizando HTML con Pug como motor de plantillas para generar las vistas dinámicas.

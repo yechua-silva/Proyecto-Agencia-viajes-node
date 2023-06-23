@@ -5,6 +5,7 @@ import router from './routes/index.js'
 import db from "./config/db.js";
 
 
+
 // Funcion para ejecutar express, asignada a app
 const app = express();
 
