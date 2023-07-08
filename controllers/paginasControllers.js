@@ -2,14 +2,21 @@
 import { Viaje } from '../models/Viajes.js'
 import { Testimonial } from '../models/Testimoniales.js'
 
+const viajeAttributes = ["id", "titulo", "precio", "fecha_ida", "fecha_vuelta", "imagen", "descripcion", "disponibles"]
+const testimonialesAttributes = ["id", "nombre", "correo", "mensaje"]
 
 const paginaInicio = async(req, res) => { // req lo que le mandamos a pedir, y res lo qu responde
     
     // Consultar 3 viajes del modelo viajes
     const promiseDB = []
 
-    promiseDB.push( Viaje.findAll( { limit: 3 } ) )
-    promiseDB.push( Testimonial.findAll( { limit: 3 } ) )
+    promiseDB.push( Viaje.findAll( {
+        attributes: viajeAttributes ,
+        limit: 3
+    }) )
+    promiseDB.push( Testimonial.findAll( { 
+        attributes: testimonialesAttributes,
+        limit: 3 } ) )
 
     try {
         // Asi ambas consultas se hacen al mismo tiempo
@@ -36,7 +43,9 @@ const paginaNosotros = (req, res) => {
 
 const paginaViajes = async (req, res) => { 
     // Consultar base de datos
-    const viajes = await Viaje.findAll() // Trae todos los resultados de la tabla
+    const viajes = await Viaje.findAll({
+        attributes: viajeAttributes
+    }) // Trae todos los resultados de la tabla
 
 
 
@@ -50,7 +59,9 @@ const paginaViajes = async (req, res) => {
 const paginaTestimoniales = async (req, res) => { 
 
     try {
-        const testimoniales = await Testimonial.findAll()
+        const testimoniales = await Testimonial.findAll({
+            attributes: testimonialesAttributes
+        })
         res.render('testimoniales', {
             pagina: 'Testimoniales',
             testimoniales
@@ -69,7 +80,9 @@ const paginaDetalleViaje = async (req, res) => {
     const { slug } = req.params
 
     try { // Hace un where al que coincida con le slug
-        const viaje = await Viaje.findOne( { where: { slug } } )
+        const viaje = await Viaje.findOne( { 
+            attributes: viajeAttributes,
+            where: { slug } } )
 
         res.render('viaje', {
             pagina: 'Información Viaje',
