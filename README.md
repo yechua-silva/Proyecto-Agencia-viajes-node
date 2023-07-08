@@ -21,7 +21,7 @@
     <code> git clone https://github.com/yechua-silva/Proyecto-Agencia-viajes-node.git </code>
 - Luego instale las dependencias en la carpeta del proyecto <br>
     <code> npm install </code>
-- El proyecto necesita un base de datos Postgres si se quiere desplegar localmente, en /sql se encuentra un archivo con el cvs para crearlas. Solo debe de importarlas
+- El proyecto necesita un base de datos Postgres si se quiere desplegar localmente, en /sql se encuentra un archivo con el csv para crearlas. Solo debe de importarlas
 - El proyecto como dependecia de desarrollo usa nodemon. Para desplegar: <br>
     <code> npm run dev </code>
   
