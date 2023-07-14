@@ -81,8 +81,8 @@ const paginaDetalleViaje = async (req, res) => {
 
     try { // Hace un where al que coincida con le slug
         const viaje = await Viaje.findOne( { 
-            attributes: viajeAttributes,
-            where: { slug } } )
+            attributes: viajeAttributes 
+        } )
 
         res.render('viaje', {
             pagina: 'Información Viaje',
